@@ -46,7 +46,11 @@ def run_with_sae(
     """
 
     if AutoModelForCausalLM is None or AutoTokenizer is None or torch is None:
-        raise ImportError("transformers and torch are required to run models")
+        raise ImportError(
+            "transformers and torch are required to run models. Install them with"
+            " `pip install mechint-demo` or `pip install torch transformers` before"
+            " calling `run_with_sae`."
+        )
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(

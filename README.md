@@ -7,7 +7,8 @@ optionally loading sparse autoencoders (SAEs) when available.
 ## Installation
 
 Install the utilities directly from the repository. Required dependencies
-(`torch`, `transformers`, and `accelerate`) will be installed automatically:
+(`torch`, `transformers`, `accelerate`, and supporting libraries such as
+`numpy` and `httpx`) will be installed automatically:
 
 ```
 pip install git+https://github.com/sscardapane/mechint-demo.git

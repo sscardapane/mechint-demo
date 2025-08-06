@@ -10,9 +10,13 @@ readme = "README.md"
 authors = [{name = "Simone Scardapane"}]
 requires-python = ">=3.8"
 dependencies = [
-    "torch",
-    "transformers",
-    "accelerate",
+    "torch>=2.0",
+    "transformers>=4.40",
+    "accelerate>=0.30",
+    "numpy>=2.0",
+    "fsspec==2025.3.0",
+    "httpx>=0.28.1",
+    "zstandard>=0.23.0",
 ]
 
 [tool.setuptools]
