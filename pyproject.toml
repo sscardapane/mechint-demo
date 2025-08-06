@@ -13,8 +13,8 @@ dependencies = [
     "torch>=2.0",
     "transformers>=4.40",
     "accelerate>=0.30",
-    "numpy>=2.0",
-    "fsspec==2025.3.0",
+    "numpy>=1.26,<2.0",
+    "fsspec>=2023.9.2",
     "httpx>=0.28.1",
     "zstandard>=0.23.0",
 ]
@@ -23,4 +23,4 @@ dependencies = [
 py-modules = ["llm_runner"]
 
 [project.optional-dependencies]
-sae = ["sae-lens"]
+sae = ["sae-lens>=6.5.1"]
